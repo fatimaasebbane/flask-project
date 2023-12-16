@@ -27,7 +27,7 @@ def index():
     if image_file.filename == '':
         return jsonify({'error': 'No selected image file'})
 
-    # Read the image file and convert it to base64
+    # Read the image file and convert it too base64
     image = Image.open(image_file)
     image_base64 = image_to_base64(image)
 
