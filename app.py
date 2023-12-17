@@ -89,4 +89,4 @@ def index():
     return jsonify({'gpt3_response': gpt3_response.choices[0].text})
 
 if __name__ == '__main__':
-    app.run(debug=False ,host='0.0.0.0')
+    app.run(host='0.0.0.0')
